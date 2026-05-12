@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: 1. Pegar o chassi do carro (código-fonte)
         uses: actions/checkout@v3
-        
+      
       - name: 1.5. Fabrica o produto
         run: echo "Este é o nosso produto final!" > produto.txt
         
@@ -22,7 +22,6 @@ jobs:
 
       - name: 4. Empacotar o produto final (Artefato)
         uses: actions/upload-artifact@v3
-        with:
+        wich:
         name: pacote-do-produto
         path: produto.txt
-
